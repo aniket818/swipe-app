@@ -37,13 +37,13 @@ def main():
         # Handle button actions
         if like:
             DataManager.handle_action("like")
-            st.experimental_rerun()
+            st.rerun()
         elif superlike:
             DataManager.handle_action("super_like")
-            st.experimental_rerun()
+            st.rerun()
         elif dislike:
             DataManager.handle_action("dislike")
-            st.experimental_rerun()
+            st.rerun()
     else:
         st.info("You've seen all available content! Check back later for more.")
     
